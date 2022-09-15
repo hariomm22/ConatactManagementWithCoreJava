@@ -8,6 +8,7 @@ import com.contact.model.User;
 public class UserUi {
 	
 	private UserDao userDao;
+	private ContactUi contactUi;
 
 	public UserUi() {
 		
@@ -41,8 +42,9 @@ public class UserUi {
 	
 	public void userMenu() {
 		int choice;
+		contactUi = new ContactUi();
 		do {
-			System.out.println("1 View the List of Contact");
+			System.out.println("\n \n1 View the List of Contact");
 			System.out.println("2 Add a new Contact");
 			System.out.println("3 Update Contact");
 			System.out.println("4 Delete Contact");
@@ -52,17 +54,17 @@ public class UserUi {
 			choice=sc.nextInt();
 			switch(choice) {
 			case 1:
-				System.out.println("List of Contact");
-				userDao = new UserDao();
+				
+				contactUi.listOfContact();
 				break;
 			case 2:
-				System.out.println("Add of Contact");
+				contactUi.addContactUi();
 				break;
 			case 3:
 				System.out.println("Update of Contact");
 				break;
 			case 4:
-				System.out.println("Delete of Contact");
+				contactUi.deleteContactUi();
 				break;
 			case 5:
 				System.out.println("Sreach of Contact");

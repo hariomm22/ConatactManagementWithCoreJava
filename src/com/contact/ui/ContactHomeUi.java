@@ -20,7 +20,7 @@ public class ContactHomeUi {
 			System.out.println("Welcome in Contact Management Application");
 			
 			do {
-				System.out.println("1 Login ");
+				System.out.println("\n \n1 Login ");
 				System.out.println("2 Register");
 				System.out.println("0 Exit");
 				System.out.println("Enter Ur Choice  ");
