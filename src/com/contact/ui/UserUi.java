@@ -61,13 +61,13 @@ public class UserUi {
 				contactUi.addContactUi();
 				break;
 			case 3:
-				System.out.println("Update of Contact");
+				contactUi.updateContactUi();
 				break;
 			case 4:
 				contactUi.deleteContactUi();
 				break;
 			case 5:
-				System.out.println("Sreach of Contact");
+				contactUi.sreachContactUi();
 				break;
 			case 0:
 				System.out.println("Logout..!");
